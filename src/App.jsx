@@ -17,6 +17,7 @@ const App = () => {
     } else {
       localStorage.setItem("citas", JSON.stringify([]));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [citas]);
 
   const crearCita = (cita) => {
